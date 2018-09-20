@@ -1,0 +1,20 @@
+
+* {
+    list-style: none;
+}
+
+
+body {
+  font-family: $font-family-primary;
+  font-weight: $font-weight--ultra-bold;
+  background-color: $color-primary;
+  color: $color-secondary; /* AAA rating, ratio 10.54 by http://colorsafe.co */
+}
+
+h1 {
+  font-size: $h1--size;
+}
+
+h2 {
+  font-size: $h2--size;
+}
