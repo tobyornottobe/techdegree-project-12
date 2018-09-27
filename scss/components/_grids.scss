@@ -3,7 +3,11 @@
 
 //container
 
+.container {
+  @include mq('sm') {
 
+  }
+}
 
 
 //header
@@ -11,9 +15,14 @@
 header {
   width: 100%;
   margin: 0 auto;
+  margin-top: 4em;
   text-align: center;
-  height: 400px;
-  background-image: url(https://picsum.photos/1300/400?image=1068);
+  //background-image: url(https://picsum.photos/1300/400?image=1068);
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
 }
 
 
@@ -25,12 +34,17 @@ header {
 
 .footer-left {
   float: left;
+
 }
 .footer-right {
   float: right;
+  display: flex;
+  flex-direction: row;
 }
 
-
+.copyright {
+  margin-top: 2em;
+}
 
 
 
@@ -39,14 +53,32 @@ header {
 ul {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  @include mq('med') {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
 }
+
+
 
 .card {
   margin: 0 auto;
-  width: 30%;
+  height: 600px;
+
+
+  @include mq('med') {
+    width: 30%;
+  }
+
 }
 
 .card .text {
   order: 1;
+}
+
+.card img {
+  margin-top: auto;
+  @include roundy(300px);
 }

@@ -1,6 +1,7 @@
 
 * {
     list-style: none;
+    text-decoration:none;
 }
 
 
@@ -17,4 +18,8 @@ h1 {
 
 h2 {
   font-size: $h2--size;
+}
+
+p {
+  font-size: $p--size;
 }
