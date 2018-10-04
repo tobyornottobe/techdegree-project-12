@@ -10,13 +10,14 @@
   </head>
   <body>
 
-    <div class="parallax-window" data-parallax="scroll" data-image-src="https://picsum.photos/1300/400?image=1068"></div>
+
+<section class="home-hero parallax--bg">
 
     <header role="banner"> <!--Using semantic html tags to make page more accessible and code more expressive to read -->
 
       <h3>Hi, my name is Toby</h3>
       <h5>Find on this page websites I created during the Treehouse Techdegree program</h5>
-
+      <a href="#container"><button class="hero-btn" type="button" name="button">See my work</button></a>
 
       <nav role="navigation">
         <ul>
@@ -28,7 +29,10 @@
 
     </header>
 
-    <div class="container">
+</section>
+
+
+    <div id="container" class="container">
 
 
 
@@ -38,53 +42,96 @@
         </form>
 
         <ul>
+
           <li class="card">
-            <div class="text">
-                <h2>
-                    <a href="/card-design-woes">Styleguide</a>
-                </h2>
-                <p>This Techdegree project was the first one I used SASS a more andvanced and flexible way to write and organise cascading stylesheets.</p>
-                <small>HTML, SCSS, grid-layout</small>
-            </div>
-            <div class="img">
-                <img src="./images/project5-corporate design-library.png" alt="Description of the great product's appearance">
-            </div>
+            <a href="https://tobyornottobe.github.io/techdegree-project-5/">
+              <div class="img-container">
+                  <img src="./images/project5-corporate design-library.png" alt="Description of the great product's appearance">
+              </div>
+              <div class="text">
+                  <h2>Styleguide</h2>
+                  <p>This Techdegree project was the first one I used SASS a more andvanced and flexible way to write and organise cascading stylesheets.</p>
+                  <small>HTML, SCSS, grid-layout</small>
+              </div>
+            </a>
           </li>
+
           <li class="card">
-            <div class="text">
-                <h2>
-                    <a href="http://tobiasstraumann.ch">Gemeinderat</a>
-                </h2>
-                <p>Simple campaign website using jQuery a commonly used javascript library.</p>
-                <small>HTML, CSS, jQuery</small>
-            </div>
-            <div class="img">
-                <img src="./images/tobiasstraumann_ch.png" alt="Description of the great product's appearance">
-            </div>
+            <a href="https://tobyornottobe.github.io/ggr/">
+              <div class="img-container">
+                  <img src="./images/tobiasstraumann_ch.png" alt="Description of the great product's appearance">
+              </div>
+              <div class="text">
+                  <h2>Gemeinderat</h2>
+                  <p>Simple campaign website using jQuery a commonly used javascript library.</p>
+                  <small>HTML, CSS, jQuery</small>
+              </div>
+            </a>
           </li>
+
           <li class="card">
-            <div class="text">
-                <h2>
-                    <a href="/card-design-woes">Web App Dashboard</a>
-                </h2>
-                <p>A challenging project, where I needed CSS and Javascript skills. Furthermore I used the Chart.js library to display data on donut, line or other charts.</p>
-                <small>HTML, CSS, Javascript, Chart.js</small>
-            </div>
-            <div class="img">
-                <img src="./images/project9-web-dashboard.png" alt="Description of the great product's appearance">
-            </div>
+            <a href="https://tobyornottobe.github.io/techdegree-project-9-1/project/">
+              <div class="img-container">
+                  <img src="./images/project9-web-dashboard.png" alt="Description of the great product's appearance">
+              </div>
+              <div class="text">
+                  <h2>Web App Dashboard</h2>
+                  <p>A challenging project, where I needed CSS and Javascript skills. Furthermore I used the Chart.js library to display data on donut, line or other charts.</p>
+                  <small>HTML, CSS, Javascript, Chart.js</small>
+              </div>
+            </a>
           </li>
+
           <li class="card">
-            <div class="text">
-                <h2>
-                    <a href="/card-design-woes">Wunglu</a>
-                </h2>
-                <p>A website build with the project files of the RSVP app shown in a Techdegree course. It's a react app to save gift ideas. Website is still under construction.</p>
-                <small>HTML, CSS, React</small>
-            </div>
-            <div class="img">
-                <img src="./images/wunglu.png" alt="Description of the great product's appearance">
-            </div>
+            <a href="http://www.wunglu.com">
+              <div class="img-container">
+                  <img src="./images/wunglu.png" alt="Description of the great product's appearance">
+              </div>
+              <div class="text">
+                  <h2>Wunglu</h2>
+                  <p>A website build with the project files of the RSVP app shown in a Techdegree course. It's a react app to save gift ideas. Website is still under construction.</p>
+                  <small>HTML, CSS, React</small>
+              </div>
+            </a>
+          </li>
+
+          <li class="card">
+            <a href="https://tobyornottobe.github.io/techdegree-project-10/">
+              <div class="img-container">
+                  <img src="./images/project10-employee-directory.png" alt="Description of the great product's appearance">
+              </div>
+              <div class="text">
+                  <h2>Employee Directory</h2>
+                  <p>An employee directory that pulls in data from an external API, parses the data and displays it in a directory style, which is searchable.</p>
+                  <small>HTML, CSS, AJAX, JS-Modal</small>
+              </div>
+            </a>
+          </li>
+
+          <li class="card">
+            <a href="https://tobyornottobe.github.io/techdegree-project-8/">
+              <div class="img-container">
+                  <img src="./images/project8-svg.png" alt="Description of the great product's appearance">
+              </div>
+              <div class="text">
+                  <h2>Scalable Vector Graphics</h2>
+                  <p>In this project, the goal was to experiment with scalable vector graphics. They allow a lot more flexibility in terms of scalability and animation, compared to .jpg or .png files.</p>
+                  <small>HTML, CSS, SVGs</small>
+              </div>
+            </a>
+          </li>
+
+          <li class="card">
+            <a href="https://tobyornottobe.github.io/techdegree-project-6/">
+              <div class="img-container">
+                  <img src="./images/project6-video.png" alt="Description of the great product's appearance">
+              </div>
+              <div class="text">
+                  <h2>Interactive Video</h2>
+                  <p>This Techdegree exam was about video players and interactivity. Select a sentence on this page and you will jump to the section in the video, where the sentence is spoken.</p>
+                  <small>HTML, CSS, Video, JavaScript</small>
+              </div>
+            </a>
           </li>
 
         </ul>
@@ -123,9 +170,7 @@
       <p class="copyright"> © 2017-2018 <strong>Tobias Straumann</strong>. All rights reserved. &#x2605; Made in Zug. 🌤️</p>
 
   </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/path/to/parallax.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
   </body>
