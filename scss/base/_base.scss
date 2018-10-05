@@ -14,10 +14,16 @@ body {
 
 h1 {
   font-size: $h1--size;
+  font-weight: $font-weight--bold;
 }
 
 h2 {
-  font-size: $h2--size;
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: $font-weight--ultra-bold;
 }
 
 p {

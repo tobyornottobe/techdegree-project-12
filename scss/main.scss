@@ -1,8 +1,4 @@
 
-// Base modules
-@import "base/_normalize.css";
-@import "base/_skeleton.css";
-
 // Utilities
 @import "utilities/variables";
 @import "utilities/mixins";
@@ -14,8 +10,7 @@
 @import "components/images";
 @import "components/grids";
 
-
-
+// Base modules
 @import "base/base";
 
 

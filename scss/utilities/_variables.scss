@@ -18,12 +18,12 @@ $font-weight--ultra-bold : 900;
 
 // Font size
 
-$base--font-size : em(16px);
-$base--line      : em(24px);
+$base--font-size : 16;
+$base--line      : em(24);
 
-$h1--size        : em(36px);
-$h2--size        : em(24px);
-$p--size         : em(20px);
+$h1--size        : em(36);
+$h2--size        : em(24);
+$p--size         : em(20);
 
 //colors
 
@@ -45,7 +45,7 @@ $gutter: 10px;
 
 //border radius
 
-$br: 4px;
+$br: 8px;
 
 //card
 

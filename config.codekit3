@@ -9,6 +9,17 @@
 	],
 "creatorBuild": "28901",
 "files": {
+	"/images/kassensturz.png": {
+		"ft": 32768,
+		"iS": 1037466,
+		"oA": 0,
+		"oAP": "/images/kassensturz.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/images/project10-employee-directory.png": {
 		"ft": 32768,
 		"iS": 1087490,
