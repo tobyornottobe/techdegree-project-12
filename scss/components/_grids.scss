@@ -52,17 +52,42 @@ header {
 //footer
 
 .fbar {
+  margin: 0 auto;
+  width: 90%;
   text-align: center;
+
 }
 
 .footer-left {
   float: left;
+  width: 100%;
+  text-align: center;
+  @include mq('med') {
+    text-align: left;
+    width: 50%;
+  }
 
 }
 .footer-right {
   float: right;
-  display: flex;
-  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  p span {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include mq('med') {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    p:first-child {
+      display: none;
+    }
+    p span {
+      margin-right: 5em;
+    }
+  }
 }
 
 .copyright {
@@ -74,6 +99,7 @@ header {
 //cards
 
 ul {
+  margin-top: 4em;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -94,9 +120,14 @@ ul {
 
   @include mq('med') {
     margin: 0 auto;
+    margin-bottom: 2em;
+    width: 48%;
+  }
+  @include mq('lg') {
     margin-bottom: 4em;
     width: 30%;
   }
+
 }
 
 .img-container img:hover {
@@ -106,6 +137,9 @@ ul {
 .card .text {
   order: 1;
   margin: 2em 2em;
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 
@@ -123,11 +157,8 @@ ul {
 
 
 
-
-.text p {
-  font-size: 1.6em;
-}
 .text small {
-  font-size: 1.2em;
+  font-size: $p--size;
   color: red;
+
 }

@@ -5,8 +5,13 @@
   border: 3px solid #fff;
   text-transform: uppercase;
   transition: ease-in-out 250ms;
-  font-size: em(24);
+  font-size: 26px;
   color: #fff; }
+  .hero-btn:hover {
+    background-color: #fff;
+    color: #797e83;
+    border-style: dotted;
+    transform: rotateX(15deg); }
 
 .home-hero {
   background-image: url(https://picsum.photos/2000/2000?image=1068);
@@ -30,20 +35,41 @@ header {
   text-align: center; }
 
 .fbar {
+  margin: 0 auto;
+  width: 90%;
   text-align: center; }
 
 .footer-left {
-  float: left; }
+  float: left;
+  width: 100%;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .footer-left {
+      text-align: left;
+      width: 50%; } }
 
 .footer-right {
   float: right;
-  display: flex;
-  flex-direction: row; }
+  width: 100%;
+  text-align: center; }
+  .footer-right p span {
+    display: flex;
+    flex-direction: column; }
+  @media (min-width: 768px) {
+    .footer-right {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end; }
+      .footer-right p:first-child {
+        display: none; }
+      .footer-right p span {
+        margin-right: 5em; } }
 
 .copyright {
   margin-top: 2em; }
 
 ul {
+  margin-top: 4em;
   width: 100%;
   display: flex;
   flex-direction: column; }
@@ -59,6 +85,10 @@ ul {
   @media (min-width: 768px) {
     .card {
       margin: 0 auto;
+      margin-bottom: 2em;
+      width: 48%; } }
+  @media (min-width: 992px) {
+    .card {
       margin-bottom: 4em;
       width: 30%; } }
 
@@ -68,6 +98,8 @@ ul {
 .card .text {
   order: 1;
   margin: 2em 2em; }
+  .card .text:hover {
+    opacity: 0.5; }
 
 .img-container {
   width: 100%;
@@ -78,11 +110,8 @@ ul {
   border-top-right-radius: 8px;
   width: 100%; }
 
-.text p {
-  font-size: 1.6em; }
-
 .text small {
-  font-size: 1.2em;
+  font-size: 1em;
   color: red; }
 
 * {
@@ -97,7 +126,7 @@ body {
   /* AAA rating, ratio 10.54 by http://colorsafe.co */ }
 
 h1 {
-  font-size: em(36);
+  font-size: 42px;
   font-weight: 700; }
 
 h2 {
@@ -108,4 +137,4 @@ h3 {
   font-weight: 900; }
 
 p {
-  font-size: em(20); }
+  font-size: 1em; }

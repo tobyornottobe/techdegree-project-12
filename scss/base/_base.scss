@@ -18,11 +18,11 @@ h1 {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: $h2--size;
 }
 
 h3 {
-  font-size: 26px;
+  font-size: $h3--size;
   font-weight: $font-weight--ultra-bold;
 }
 
