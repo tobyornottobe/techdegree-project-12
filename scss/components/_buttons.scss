@@ -27,11 +27,10 @@ ul ul {
 .rating-stars {
   position: absolute;
   bottom: 0;
-  padding: 0 1.5em;
+  width: 100%;
+  margin: 0 auto;
   height: 10%;
-  @include mq('med') {
-    padding: 0 2em;
-  }
+
 }
 
 .rating-stars ul {
@@ -47,8 +46,11 @@ ul ul {
 
 /* Idle State of the stars */
 .rating-stars ul > li.star > i.fa {
-  font-size:2.5em; /* Change the size of the stars */
+  font-size:2em; /* Change the size of the stars */
   color:#ccc; /* Color on idle state */
+  @include mq('med') {
+    font-size:2.5em;
+  }
 }
 
 /* Hover state of the stars */
