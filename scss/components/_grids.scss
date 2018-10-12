@@ -98,7 +98,7 @@ header {
 
 //cards
 
-ul {
+.portfolio {
   margin-top: 4em;
   width: 100%;
   display: flex;
@@ -107,13 +107,11 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
 }
 
 
-
-
 .card {
+  position: relative;
   margin: 2em;
   background-color: $white;
   border-radius: $br;
@@ -136,7 +134,7 @@ ul {
 
 .card .text {
   order: 1;
-  margin: 2em 2em;
+  margin: 2em 1em 5em 1em;
   &:hover {
     opacity: 0.5;
   }
@@ -159,6 +157,6 @@ ul {
 
 .text small {
   font-size: $p--size;
-  color: red;
+  color: #FF912C;
 
 }

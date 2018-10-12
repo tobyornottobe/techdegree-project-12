@@ -31,11 +31,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/images/project5-corporate design-library.png": {
+	"/images/project5-corporate-design-library.png": {
 		"ft": 32768,
 		"iS": 288915,
 		"oA": 0,
-		"oAP": "/images/project5-corporate design-library.png",
+		"oAP": "/images/project5-corporate-design-library.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -97,17 +97,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/images/XYZ.png": {
-		"ft": 32768,
-		"iS": 593493,
-		"oA": 0,
-		"oAP": "/images/XYZ.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -147,36 +136,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"/scss/base/_normalize.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/scss/base/_normalize-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/scss/base/_skeleton-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/scss/base/_skeleton-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/scss/base/_skeleton.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/scss/base/_skeleton-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"/scss/components/_buttons.scss": {
 		"aP": 0,

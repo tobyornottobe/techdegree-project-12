@@ -1,9 +1,11 @@
 .hero-btn {
   border: 3px solid $white;
+  padding: 0.2em 0.5em;
   text-transform: uppercase;
   transition: ease-in-out 250ms;
   font-size: $h3--size;
   color: $white;
+  border-radius: $br;
 
   &:hover {
     background-color: $white;
@@ -12,4 +14,58 @@
     transform: rotateX(15deg);
   }
 
+}
+
+
+/* Rating Star Widgets Style */
+.text-center {text-align:center;}
+
+ul ul {
+  margin: 0 auto;
+}
+
+.rating-stars {
+  position: absolute;
+  bottom: 0;
+  padding: 0 1.5em;
+  height: 10%;
+  @include mq('med') {
+    padding: 0 2em;
+  }
+}
+
+.rating-stars ul {
+  list-style-type:none;
+  padding:0;
+
+  -moz-user-select:none;
+  -webkit-user-select:none;
+}
+.rating-stars ul > li.star {
+  display:inline-block;
+}
+
+/* Idle State of the stars */
+.rating-stars ul > li.star > i.fa {
+  font-size:2.5em; /* Change the size of the stars */
+  color:#ccc; /* Color on idle state */
+}
+
+/* Hover state of the stars */
+.rating-stars ul > li.star.hover > i.fa {
+  color:#FFCC36;
+}
+
+/* Selected state of the stars */
+.rating-stars ul > li.star.selected > i.fa {
+  color:#FF912C;
+}
+
+
+
+/*twitter button*/
+#twitter-widget-0 {
+  overflow: hidden; //scrolling="no"
+  border: 0; //frameborder="0"
+  //allowtransparency="true"
 }
