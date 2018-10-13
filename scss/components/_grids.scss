@@ -3,6 +3,35 @@
 
 //container
 
+.container {
+  @include mq('sm') {
+
+  }
+}
+
+
+
+
+//parallax
+
+
+.home-hero {
+  background-image: url(https://picsum.photos/2000/2000?image=1068);
+  background-size: cover;
+  background-position: center;
+  padding: 10em 0;
+  color: #FFF;
+  background-attachment: fixed;
+  @include mq('sm') {
+    height: 100vh;
+    padding-top: 35vh;
+  }
+
+}
+
+.parallax--bg {
+  transition: initial;
+}
 
 
 
@@ -11,30 +40,123 @@
 header {
   width: 100%;
   margin: 0 auto;
-  margin-top: 2em;
+  margin-top: 4em;
   text-align: center;
-  height: 300px;
-  background-image: url(https://picsum.photos/1000/300?image=1068);
+  //background-image: url(https://picsum.photos/1300/400?image=1068);
 }
 
 
 
+
+
+//footer
+
+.fbar {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+
+}
+
+.footer-left {
+  float: left;
+  width: 100%;
+  text-align: center;
+  @include mq('med') {
+    text-align: left;
+    width: 50%;
+  }
+
+}
+.footer-right {
+  float: right;
+  width: 100%;
+  text-align: center;
+  p span {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include mq('med') {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    p:first-child {
+      display: none;
+    }
+    p span {
+      margin-right: 5em;
+    }
+  }
+}
+
+.copyright {
+  margin-top: 2em;
+}
 
 
 
 //cards
 
-ul {
+.portfolio {
+  margin-top: 4em;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  @include mq('med') {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
+
 .card {
-  margin: 0 auto;
-  width: 30%;
+  position: relative;
+  margin: 2em;
+  background-color: $white;
+  border-radius: $br;
+
+  @include mq('med') {
+    margin: 0 auto;
+    margin-bottom: 2em;
+    width: 48%;
+  }
+  @include mq('lg') {
+    margin-bottom: 4em;
+    width: 30%;
+  }
+
+}
+
+.img-container img:hover {
+  opacity: 0.5;
 }
 
 .card .text {
   order: 1;
+  margin: 2em 1em 5em 1em;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+
+.img-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.img-container img {
+  border-top-right-radius: $br;
+  width: 100%;
+}
+
+
+
+
+.text small {
+  font-size: $p--size;
+  color: #FF912C;
+
 }

@@ -1,6 +1,7 @@
 
 * {
     list-style: none;
+    text-decoration:none;
 }
 
 
@@ -13,8 +14,18 @@ body {
 
 h1 {
   font-size: $h1--size;
+  font-weight: $font-weight--bold;
 }
 
 h2 {
   font-size: $h2--size;
+}
+
+h3 {
+  font-size: $h3--size;
+  font-weight: $font-weight--ultra-bold;
+}
+
+p {
+  font-size: $p--size;
 }

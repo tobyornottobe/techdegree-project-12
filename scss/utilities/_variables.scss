@@ -18,12 +18,13 @@ $font-weight--ultra-bold : 900;
 
 // Font size
 
-$base--font-size : em(16px);
-$base--line      : em(24px);
+$base--font-size : 16;
+$base--line      : em(24);
 
-$h1--size        : em(36px);
-$h2--size        : em(24px);
-
+$h1--size        : 42px;
+$h2--size        : 28px;
+$h3--size        : 26px;
+$p--size         : 1em;
 
 //colors
 
@@ -39,11 +40,17 @@ $color-accent    : #D0EFB1;
 $color-shadow    : rgba($black, .2);
 
 
-
+// Layout
+$max-width: 1000px;
+$gutter: 10px;
 
 //border radius
 
-$br: 4px;
+$br: 8px;
+
+//card
+
+$card-height: em(600px);
 
 //grid columns
 
@@ -54,5 +61,7 @@ $g-cont-max-w   : 1050px;
 
 //breakpoints
 
-$break-sm    : 1px;
-$break-md    : 768px;
+$break-xs: 319px;
+$break-s: 320px;
+$break-m: 768px;
+$break-l: 992px;
